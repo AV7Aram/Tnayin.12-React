@@ -1,10 +1,10 @@
 import { todos } from '../../db/db'
 import { Card } from '../Card/Card'
-import '../Sections/Section.css'
+import style from '../Sections/Section.module.css'
 
 export const Todos = () => {
     return (
-        <div className="section">
+        <div className={style.section}>
             <h3>Todos</h3>
             {todos.map(todo => (
                 <Card key={todo.id}>

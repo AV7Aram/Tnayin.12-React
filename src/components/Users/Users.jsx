@@ -1,10 +1,10 @@
 import { users } from '../../db/db'
 import { Card } from '../Card/Card'
-import '../Sections/Section.css'
+import style from '../Sections/Section.module.css'
 
 export const Users = () => {
     return (
-        <div className="section">
+        <div className={style.section}>
             <h3>Users</h3>
             {users.map(user => (
                 <Card key={user.id}>

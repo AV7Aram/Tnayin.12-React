@@ -1,10 +1,10 @@
 import { albums } from '../../db/db'
 import { Card } from '../Card/Card'
-import '../Sections/Section.css'
+import style from '../Sections/Section.module.css'
 
 export const Albums = () => {
     return (
-        <div className="section">
+        <div className={style.section}>
             <h3>Albums</h3>
             {albums.map(album => (
                 <Card key={album.id}>

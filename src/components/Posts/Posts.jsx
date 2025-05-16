@@ -1,10 +1,10 @@
 import { posts } from '../../db/db'
 import { Card } from '../Card/Card'
-import '../Sections/Section.css'
+import style from '../Sections/Section.module.css'
 
 export const Posts = () => {
     return (
-        <div className="section">
+        <div className={style.section}>
             <h3>Posts</h3>
             {posts.map(post => (
                 <Card key={post.id}>

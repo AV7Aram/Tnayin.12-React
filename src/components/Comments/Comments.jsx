@@ -1,10 +1,10 @@
 import { comments } from '../../db/db'
 import { Card } from '../Card/Card'
-import '../Sections/Section.css'
+import style from '../Sections/Section.module.css'
 
 export const Comments = () => {
     return (
-        <div className="section">
+        <div className={style.section}>
             <h3>Comments</h3>
             {comments.map(comment => (
                 <Card key={comment.id}>

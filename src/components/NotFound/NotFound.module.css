@@ -1,17 +1,20 @@
-.notfound {
-    text-align: center;
-    margin-top: 50px;
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
 }
 
-.notfound h1 {
+.notFound h1 {
     font-size: 5rem;
 }
 
-.notfound p {
+.notFound p {
     font-size: 1.5rem;
 }
 
-.back-btn {
+.backBtn {
     color: #282c34;
     background-color: #61dafb;
     padding: 10px 20px;
@@ -24,6 +27,6 @@
     transition: background-color 0.3s;
 }
 
-.back-btn:hover {
+.backBtn:hover {
     background-color: #21a1f1;
 }
