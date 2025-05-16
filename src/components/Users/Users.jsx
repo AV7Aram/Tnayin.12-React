@@ -1,8 +1,7 @@
-import { users } from '../../db/db'
 import { Card } from '../Card/Card'
 import style from '../Sections/Section.module.css'
 
-export const Users = () => {
+export const Users = ({ users }) => {
     return (
         <div className={style.section}>
             <h3>Users</h3>

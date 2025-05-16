@@ -1,8 +1,7 @@
-import { photos } from '../../db/db'
 import { Card } from '../Card/Card'
 import style from '../Sections/Section.module.css'
 
-export const Photos = () => {
+export const Photos = ({ photos }) => {
     return (
         <div className={style.section}>
             <h3>Photos</h3>

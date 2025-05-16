@@ -12,18 +12,18 @@ import { Users } from './components/Users/Users'
 
 import './App.css'
 
-function App() {
+function App({ posts, comments, albums, photos, todos, users }) {
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/posts" element={<Posts />} />
-        <Route path="/comments" element={<Comments />} />
-        <Route path="/albums" element={<Albums />} />
-        <Route path="/photos" element={<Photos />} />
-        <Route path="/todos" element={<Todos />} />
-        <Route path="/users" element={<Users />} />
+        <Route path="/posts" element={<Posts  posts={posts}/> } />
+        <Route path="/comments" element={<Comments comments={comments}/>} />
+        <Route path="/albums" element={<Albums albums={albums}/>} />
+        <Route path="/photos" element={<Photos photos={photos}/>} />
+        <Route path="/todos" element={<Todos todos={todos}/>} />
+        <Route path="/users" element={<Users users={users}/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

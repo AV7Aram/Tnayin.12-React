@@ -1,8 +1,7 @@
-import { comments } from '../../db/db'
 import { Card } from '../Card/Card'
 import style from '../Sections/Section.module.css'
 
-export const Comments = () => {
+export const Comments = ({ comments }) => {
     return (
         <div className={style.section}>
             <h3>Comments</h3>
