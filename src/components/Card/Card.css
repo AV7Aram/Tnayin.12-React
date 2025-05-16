@@ -1,0 +1,25 @@
+.card {
+    padding: 15px;
+    margin: 10px auto;
+    background-color: #333;
+    border-radius: 5px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card img {
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+}

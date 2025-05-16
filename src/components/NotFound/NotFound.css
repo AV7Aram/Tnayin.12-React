@@ -1,0 +1,29 @@
+.notfound {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.notfound h1 {
+    font-size: 5rem;
+}
+
+.notfound p {
+    font-size: 1.5rem;
+}
+
+.back-btn {
+    color: #282c34;
+    background-color: #61dafb;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #21a1f1;
+}
